@@ -26,7 +26,47 @@
    }
    h1{
      color: pink;
+     background-color: blue;
    }
+
+   a{
+     text-decoration: none;
+     color: purple;
+     font-weight: 900;
+   }
+
+   a:hover{
+     color: white;
+     text-decoration: underline;
+   }
+   /*if you move mouse over website, links respond*/
+
+   a:visited{
+     color: red;
+   }
+
+   p{
+     line-height: 75px;
+     text-indent: 50px;
+   }
+
+   li{
+     list-style: circle;
+   }
+
+   ul li{
+     list-style: circle;
+   }
+   /*if I just want to change ordered lists*/
+
+   #name{
+     text-align: center;
+     background: cyan;
+   }
+   .links{
+     color: cyan;
+   }
+   /*change links*/
 
    </style>
 
@@ -34,7 +74,7 @@
 
  <body>
 
-   <h1>Tanja Moissl</h1>
+   <h1 id="name">Tanja Moissl</h1>
 
    <h4>Curriculum Vitae</h4>
 
@@ -98,7 +138,7 @@ who has professional experience in her field as well as a gobal perspective.</h5
 
     <h2>Education</h2>
 
-    <h3><a href="https://www.niche.com/colleges/university-of-miami/">University of Miami</a></h3>
+    <h3><a class="links" href="https://www.niche.com/colleges/university-of-miami/">University of Miami</a></h3>
       <h4>Aug 2017 - May 2020<br>
       Bachelor of Science in Advertising - Minors in Marketing, French and Interactive Media</h4>
 
@@ -109,9 +149,10 @@ who has professional experience in her field as well as a gobal perspective.</h5
         <li><strong>Relevant Coursework:</strong> Advertising / Marketing / Communications / French / Graphic Design / UX Design</li>
       </ul>
 
-    <h3><a href="https://www.niche.com/colleges/syracuse-university/">Syracuse University</a></h3>
+    <h3><a class="links" href="https://www.niche.com/colleges/syracuse-university/">Syracuse University</a></h3>
       <h4>Aug 2016 - May 2017<br>
       Bachelor of Science in Communications</h4>
+<!--if I want to aplly the design I have to add class here-->
 
       <ul>
         <li><strong>Honors:</strong> Dean's List
