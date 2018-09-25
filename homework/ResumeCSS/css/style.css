@@ -23,6 +23,10 @@ image{
   image-orientation: center;
 }
 
+h5{
+  background-color: white;
+}
+
 a{
   text-decoration: none;
   color: purple;
