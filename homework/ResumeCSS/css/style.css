@@ -1,20 +1,27 @@
-/*CSS Comment*/
-
 body{
-  background-color: orange;
-  background-color: #333333;
-  background-color: rgb(300,255,0);
-  /*different ways to do it*/
+  background-color: lightgrey;
 
-  /*change the font family*/
-  font-family: sans-serif;
-  font-family: monospace;
+  font-family: 'Handlee', cursive;
+
 }
 h1{
   color: pink;
-  background-color: blue;
+  background-color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 100;
 }
 
+h2{
+  text-align: center;
+}
+
+address{
+  text-align: center;
+}
+
+image{
+  image-orientation: center;
+}
 
 a{
   text-decoration: none;
@@ -26,11 +33,11 @@ a:hover{
   color: white;
   text-decoration: underline;
 }
-/*if you move mouse over website, links respond*/
 
-a:visited{
-  color: red;
-}
+
+/* a:visited{
+  color: white;
+} */
 
 p{
   line-height: 75px;
@@ -44,13 +51,14 @@ li{
 ul li{
   list-style: circle;
 }
-/*if I just want to change ordered lists*/
+
 
 #name{
   text-align: center;
-  background: cyan;
+  background: white;
+  font-size: 100;
 }
+
 .links{
-  color: cyan;
+  color: purple;
 }
-/*change links*/
