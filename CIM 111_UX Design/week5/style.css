@@ -8,7 +8,62 @@
 
 #box{
   background-color: pink;
-  width: 180px;
-  height: 180px;
+  width: auto;
+  height: auto;
   padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  border-style: dashed;
+  border-width: 5px;
+  border-color: red;
+  margin: 50px;
+}
+
+header{
+  background-color: pink;
+  width: 960px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -25px;
+}
+
+main{
+  background-color: lightgrey;
+  width:960px;
+  height:auto;
+  margin: 0 auto;
+  margin-top: -16px;
+}
+
+footer{
+  background-color: black;
+  width:960px;
+  height:auto;
+  margin: 0 auto;
+}
+
+nav{
+  width: 200px;
+  margin: 0 auto;
+  background-color: pink;
+
+}
+
+nav ul{
+
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+
 }

@@ -1,18 +1,39 @@
 body{
-  background-color: lightgrey;
+  background-color: gainsboro;
 
   font-family: 'Handlee', cursive;
-
 }
-h1{
-  color: pink;
+
+#box1{
   background-color: white;
+  width: 940px;
+  height: auto;
+  padding:10px;
+}
+
+#box2{
+  background-color: pink;
+  width: 940px;
+  height: auto;
+  padding: 10px;
+}
+
+#box3{
+  background-color: white;
+  width: 940px;
+  height: auto;
+  padding: 10px;
+}
+
+h1{
+  color: white;
   font-family: 'Lobster', cursive;
   font-size: 100;
 }
 
 h2{
   text-align: center;
+  background-color: white;
 }
 
 address{
@@ -24,12 +45,12 @@ image{
 }
 
 h5{
-  background-color: white;
+  text-align: center;
 }
 
 a{
   text-decoration: none;
-  color: purple;
+  color: white;
   font-weight: 900;
 }
 
@@ -59,10 +80,38 @@ ul li{
 
 #name{
   text-align: center;
-  background: white;
-  font-size: 100;
+  font-size: 200;
+}
+
+
+.strong{
+  background-color: MediumTurquoise;
 }
 
 .links{
-  color: purple;
+  color: MediumTurquoise;
 }
+
+header{
+  height: 200px;
+  width: 960px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: -25px;
+}
+
+main{
+  background-color: gainsboro;
+  width:960px;
+  height:auto;
+  margin: 0 auto;
+  margin-top: -16px;
+}
+
+footer{
+  background-color: pink;
+  width:960px;
+  height:auto;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
