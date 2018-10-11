@@ -25,23 +25,47 @@ body{
   padding: 10px;
 }
 
+#box4{
+  background-color: white;
+  width: 940px;
+  height: auto;
+  padding: 10px;
+}
+
+#changeText{
+  color: PaleVioletRed;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#border{
+  color: MediumTurquoise;
+  border-width: 5px;
+  border-style: dashed;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
 h1{
   color: white;
   font-family: 'Lobster', cursive;
-  font-size: 100;
 }
 
 h2{
   text-align: center;
   background-color: white;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
 address{
   text-align: center;
 }
 
-image{
-  image-orientation: center;
+img.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 h5{
@@ -79,8 +103,7 @@ ul li{
 
 
 #name{
-  text-align: center;
-  font-size: 200;
+  text-align: center; 
 }
 
 
@@ -94,7 +117,7 @@ ul li{
 
 header{
   height: 200px;
-  width: 960px;
+  width: 950px;
   background-color: pink;
   margin: 0 auto;
   margin-top: -25px;
@@ -115,3 +138,4 @@ footer{
   margin: 0 auto;
   margin-top: 25px;
   text-align: center;
+}

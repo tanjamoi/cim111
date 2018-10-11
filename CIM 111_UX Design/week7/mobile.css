@@ -1,0 +1,12 @@
+@import "desktop.css";
+
+body{
+  background-color: green;
+}
+
+.cols{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+
+}

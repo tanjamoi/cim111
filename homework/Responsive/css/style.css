@@ -1,0 +1,96 @@
+header, footer{
+  width: 80%;
+  height: 100px;
+  background-color: lightpink;
+  margin: auto;
+}
+main{
+  width: 80%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+}
+
+#grid1{
+  display: grid;
+  grid-template-areas: "col1 col2";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+#col1{
+  grid-area: col1;
+  background-color: white;
+  height: auto;
+}
+
+#col2{
+  grid-area: col2;
+  background-color: white;
+  height: auto;
+}
+
+#grid2{
+  display: grid;
+  grid-template-areas: "col3 col4";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  margin-top: 10px;
+  text-align: center;
+}
+#col3{
+  grid-area: col3;
+  background-color: white;
+  height: auto;
+}
+#col4{
+  grid-area: col4;
+  background-color: white;
+  height: auto;
+}
+
+
+#footergrid{
+  display: grid;
+  grid-template-areas: "footer1 footer2 footer3";
+  grid-template-rows: 1fr;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  text-align: center;
+}
+
+#footer1{
+  grid-area: footer1;
+  background-color: lightpink;
+  height: auto;
+}
+
+#footer2{
+  grid-area: footer2;
+  background-color: lightpink;
+  height: auto;
+}
+
+#footer3{
+  grid-area: footer3;
+  background-color: lightpink;
+  height: auto;
+}
+
+.images{
+  height: 250px;
+  display: block;
+  margin: 10px auto;
+}
+
+.images2{
+  height:100px;
+  display: block;
+  margin: 10px auto;
+}
+
+h1{
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      header, footer{
+        width: 80%;
+        height: auto;
+        background-color: coral;
+      }
+
+      main{
+        width: 960px;
+        height: 400px;
+        background-color: purple;
+      }
+
+      #grid{
+        display: grid;
+        grid-template-areas: "col1 col2";
+        grid-template-rows: 1fr;
+        grid-template-columns: 480px;
+      }
+
+      #col1{
+        grid-area: col1;
+        background-color: lavender;
+        height: auto;
+      }
+
+      #col1{
+        grid-area: col2;
+        background-color: blue;
+        height: auto;
+      }
+
+      #grid2{
+        display: grid;
+        grid-template-areas: "col3 col4 col5";
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: 200px;
+        margin-top: 10px;
+      }
+
+      #col3{
+        grid-area: col3;
+        background-color: pink;
+        height: 200px;
+      }
+
+      #col4{
+        grid-area: col4;
+        background-color: turquoise;
+        height: 200px;
+      }
+
+      #col5{
+        grid-area: col5;
+        background-color: gray;
+        height: 200px;
+      }
+
+      .images{
+        height: 160px;
+        display: block;
+        margin: 10px auto;
+      }
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <header></header>
+
+    <main>
+
+      <section id="grid1">
+        <div id="col1"></div>
+        <div id="col2"></div>
+        <img class="images"
+        src="https://farm5.staticflickr.com/635/21707999428_94f57ce2a0_o.jpg"
+        <a href="https://www.flickr.com/photos/dolbex/21707999428">"Shadow #siberianhusky #dog #dogs #cute #blueeyes #husky #wolfpack #wolfdog #shadow #puppy #puppies"</a> by <a href="https://www.flickr.com/people/dolbex/">dolbex</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0"> CC BY 2.0 </a>
+      </img>
+        <div id="col2"></div>
+      </section>
+      <section id="grid2">
+        <div id="col3"></div>
+        <div id="col4"></div>
+        <div id="col5"></div>
+      </section>
+        <div
+
+    </main>
+
+    <footer></footer>
+
+  </body>
+
+
+
+
+</html>

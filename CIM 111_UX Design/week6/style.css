@@ -67,3 +67,34 @@ nav ul li a{
 nav ul li a:hover{
 
 }
+
+
+
+.cols{
+  width: 49.5%;
+  height: 400px;
+  background-color: red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#container1{
+  background-color: purple;
+  width: 700px;
+
+}
+
+@media only screen and (min-width: 960px){
+  body{
+    background-color: orange;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background-color: green;
+  }
+  .cols{
+    display: block;
+  }
+}
