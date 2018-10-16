@@ -1,4 +1,4 @@
-header, footer{
+header{
   width: 80%;
   height: 200px;
   background-color: lightpink;
@@ -6,12 +6,22 @@ header, footer{
   text-align: center;
   margin-top: 15px;
 }
+
 main{
   width: 80%;
   height: auto;
   background-color: white;
   margin: auto;
   margin-top: 15px;
+}
+
+footer{
+  width: 80%;
+  height: 200px;
+  background-color: lightpink;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
 }
 
 #grid1{
@@ -89,18 +99,23 @@ main{
   grid-area: footer1;
   background-color: lightpink;
   height: auto;
+  text-align: center;
+  margin-left: 10px;
 }
 
 #footer2{
   grid-area: footer2;
   background-color: lightpink;
   height: auto;
+  text-align: center;
 }
 
 #footer3{
   grid-area: footer3;
   background-color: lightpink;
   height: auto;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .images{
@@ -120,7 +135,7 @@ h1{
   color: white;
   text-align: center;
   display: inline-block;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 p{
@@ -132,7 +147,7 @@ p{
 nav{
   width: 500px;
   height: 50px;
-  background-color: black;
+  background-color: PaleVioletRed;
   margin: 0 auto;
 }
 
@@ -144,6 +159,7 @@ nav ul li{
   display: inline-block;
   text-align: center;
   margin-right: 20px;
+  margin-top: 10px;
 }
 nav ul li a{
   text-decoration: none;
