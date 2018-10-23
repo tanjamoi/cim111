@@ -26,9 +26,9 @@ footer{
 
 #grid1{
   display: grid;
-  grid-template-areas: "col1";
+  grid-template-areas: "col1 col2";
   grid-template-rows: 1fr;
-  grid-template-columns: 100%;
+  grid-template-columns: 50% 50%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: grey;
@@ -37,33 +37,30 @@ footer{
 
 #col1{
   grid-area: col1;
-  background-color: paleturquoise;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: dashed;
-  border-width: 5px;
-  border-color: MediumTurquoise;
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
   margin: auto;
-}
-
-#grid2{
-  display: grid;
-  grid-template-areas: "col2 col3 col4 col5";
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1fr;
-  margin-top: 10px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  color: gray;
 }
 
 #col2{
   grid-area: col2;
-  background-color: white;
   height: auto;
+  background-color: white;
+  margin-left: 5px;
   margin-right: 5px;
-  background-color: paleturquoise;
+}
+
+#grid2{
+  display: grid;
+  grid-template-areas: "col3 col4";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
 }
 
 #col3{
@@ -72,16 +69,27 @@ footer{
   height: auto;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: paleturquoise;
 }
 
 #col4{
   grid-area: col4;
+  height: auto;
   background-color: white;
   height: auto;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: paleturquoise;
+  margin: auto;
+}
+
+#grid3{
+  display: grid;
+  grid-template-areas: "col5 col6";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
 }
 
 #col5{
@@ -89,15 +97,23 @@ footer{
   background-color: white;
   height: auto;
   margin-left: 5px;
-  background-color: paleturquoise;
+  margin-right: 5px;
+}
+
+#col6{
+  grid-area: col6;
+  background-color: white;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 
 #footergrid{
   display: grid;
-  grid-template-areas: "footer1 footer2 footer3";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-areas: "footer1";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -108,22 +124,6 @@ footer{
   background-color: lightpink;
   height: auto;
   text-align: center;
-  margin-left: 10px;
-}
-
-#footer2{
-  grid-area: footer2;
-  background-color: lightpink;
-  height: auto;
-  text-align: center;
-}
-
-#footer3{
-  grid-area: footer3;
-  background-color: lightpink;
-  height: auto;
-  text-align: center;
-  margin-right: 10px;
 }
 
 .images{
@@ -134,13 +134,12 @@ footer{
 }
 
 .images2{
-  height:150px;
+  height:175px;
   display: block;
   margin: 10px auto;
   border: dashed;
   border-width: 5px;
   border-color: PaleVioletRed;
-  margin-top: 20px;
 }
 
 h1{
@@ -150,6 +149,15 @@ h1{
   display: inline-block;
   font-size: 50px;
   margin-top: 49px;
+}
+
+h2{
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  margin-top: 60px;
 }
 
 p{

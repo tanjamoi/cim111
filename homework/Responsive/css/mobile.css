@@ -2,16 +2,16 @@
 
 #grid1{
   display: grid;
-  grid-template-areas: "col1" "col2";
-  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "col1";
+  grid-template-rows: 1fr;
   grid-template-columns: 100%;
   text-align: center;
 }
 
 #grid2{
     display: grid;
-    grid-template-areas: "col3" "col4";
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "col2" "col3" "col4" "col5";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 100%;
     text-align: center;
 }
@@ -26,7 +26,6 @@
 
 .images{
   display: block;
-  background-color: lightpink;
   height: 100px;
 }
 
@@ -35,6 +34,7 @@ nav{
   height: 150px;
   background-color: black;
   margin: 0 auto;
+  display: block;
 }
 
 nav ul li{
