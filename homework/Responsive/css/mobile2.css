@@ -1,27 +1,36 @@
-@import "style.css";
+@import "pages.css";
 
 
 
 #grid1{
-  display: grid;
-  grid-template-areas: "col1";
-  grid-template-rows: 1fr;
+  display: block;
+  grid-template-areas: "col1 col2";
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 100%;
   text-align: center;
+  margin-top: 50px;
 }
 
 #grid2{
     display: block;
-    grid-template-areas: "col2 col3 col4 col5";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "col3 col4";
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%;
     text-align: center;
 }
 
+#grid3{
+  display: block;
+  grid-template-areas: "col5 col6";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
 #footergrid{
   display: grid;
-  grid-template-areas: "footer1" "footer2" "footer3";
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "footer1";
+  grid-template-rows: 1fr;
   grid-template-columns: 100%;
   text-align: center;
 }
