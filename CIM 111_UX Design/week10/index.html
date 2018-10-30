@@ -1,0 +1,130 @@
+<! DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Bavarian Recipes</title>
+    <meta charset="utf-8">
+    <style></style>
+
+  </head>
+
+  <body>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <header>
+      <h1>Kaiserschmarren</h1>
+    </header>
+
+    <main>
+
+      <section id="grid1">
+        <div id="col1">
+          <h4>The chopped pancakes known as Kaiserschmarren are not only a long-running favourite in Austria and Bavaria. While the Austro-Hungarian monarchy may have united any number of peoples under its emblem of the two eagles, when it came to his choice of meals Emperor Franz Joseph proved very loyal to his native country and region. Alongside cooked beef, he loved simple pastry dishes made from eggs, flour, milk and a little sugar, such as the light and creamy Kaiserschmarren. Rumour suggests that the thanks for this dish ought to go to a failed and shredded omelette. Whether or not that is true, the important thing is that the recipe has been passed down to us.</h4>
+        </div>
+      </section>
+
+      <section id="grid2">
+        <div id="col2">
+          <img src="images/kaiserschmarren2.jpg" width=500px>
+          <div id="imageRecepticle"></div>
+        </div>
+        <div id="col3">
+          <h3>Ingredients</h3>
+          <ul>
+            <li>6 Eggs</li>
+            <li>350–400 ml milk</li>
+            <li>180–200 g finely ground flour</li>
+            <li>3 tbsp crystal sugar, for the topping</li>
+            <li>2 tbsp raisins</li>
+            <li>1 packet (8g) vanilla sugar</li>
+            <li>A dash of rum</li>
+            <li>Some grated lemon rind</li>
+            <li>A pinch of salt</li>
+            <li>Approx. 50 g butter for frying</li>
+            <li>1 tablespoon of butter shavings and crystal sugar, for caramelising</li>
+            <li>Icing sugar and cinnamon for dusting</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="grid2">
+        <div id="col4">
+          <p>Place the raisins in a bowl, mix with the rum and leave to stand for approx. 15 minutes. Separate the eggs and place the yolks in a mixing bowl. Pour in the milk, flavour with some grated lemon rind and vanilla sugar, and add the flour. Mix to form a smooth dough.<br><br>
+            Beat the egg whites with the crystal sugar and a small pinch of salt until it forms a firm peak, and fold into the dough mix. Pre-heat the oven to 180 °C.<br><br>
+            Let the butter melt and bubble up in one large, or two small (coated) heatproof dishes. Pour in the mixture and after 1–2 minutes scatter the soaked raisins over the top. Cook the underside until light brown, turn over using a spatula and bake for 6–8 minutes in the pre-heated oven until golden brown.<br><br>
+            Tear the ‘Schmarren’ into small pieces, using two forks. Scatter the butter shavings over the top, sprinkle with some crystal sugar, and caramelise under the grill at a high heat.<br><br>
+            Remove from the grill and arrange on pre-heated plates. Dust with icing sugar and cinnamon. Serve with baked plums, a berry ragout or fruit compote. The Kaiserschmarren can also be cooked at the top of the oven and caramelised at the end with a lid to cover.<br><br>
+            <strong>Cooking time:</strong> 8–10 minutes</p>
+        </div>
+      </section>
+      <section id="grid3">
+        <div calss="col">Click to view images</div>
+        <div class="col">More interpretations</div>
+      </section>
+
+      <h2>Click to view images</h2>
+      <img id="image1" src="https://c1.staticflickr.com/8/7010/6487080111_5323cea69e_o.jpg" width="100">
+      <img id="image2" src="https://c5.staticflickr.com/3/2437/4007874876_0d26f28ec7_o.jpg" width="100">
+      <div id="imageRecepticle"></div>
+
+    </main>
+
+    <footer>
+      <section id="footergrid">
+        <div id="footer">Guten Appetit!</div>
+      </section>
+    </footer>
+
+    <script>
+      $(document).ready(function(){
+      //All jquery code should be placed below, all jquery inside of document ready function
+        $("body").css("background-color", "lightblue");
+        $("h1").css("color", "white");
+        $("h1").css("font-size", "40px");
+        $("#textChange").css("background-color", "pink");
+        $("#textChange").html("I love javascript");
+
+        $("#textChange").click(function(){
+          $("body").css("background-color", "orange");
+        }); //End of text change click
+
+        $("#info").mouseenter(function(){
+          $("#recepticle").html("<em> This information is important </em>");
+          $("#info").css("background-color", "blue");
+        });
+        $("#info").mouseleave(function(){
+          $("#recepticle").html("");
+          $("#info").css("background-color", "transparent");
+        });
+
+        $("#image1").click(function(){
+          $("#imageRecepticle").html('<img src="https://c1.staticflickr.com/8/7010/6487080111_5323cea69e_o.jpg" width="300">');
+        });
+
+        $("#image2").click(function(){
+          $("#imageRecepticle").html('<img src="https://c5.staticflickr.com/3/2437/4007874876_0d26f28ec7_o.jpg" width="300">');
+        });
+
+        $("#hide").click(function(){
+          $(".box").hide();
+        });
+
+        $("#show").click(function(){
+          $(".box").show();
+        });
+
+        $("#toggle").click(function(){
+          $(".box").toggle(1000);
+        });// Add a number to add effect; the higher the number the longer it takes
+
+
+      });// End of document ready
+
+    </script>
+
+  </body>
+
+</html>
