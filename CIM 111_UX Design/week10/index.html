@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -22,18 +22,14 @@
 
       <section id="grid1">
         <div id="col1">
-          <h4>The chopped pancakes known as Kaiserschmarren are not only a long-running favourite in Austria and Bavaria. While the Austro-Hungarian monarchy may have united any number of peoples under its emblem of the two eagles, when it came to his choice of meals Emperor Franz Joseph proved very loyal to his native country and region. Alongside cooked beef, he loved simple pastry dishes made from eggs, flour, milk and a little sugar, such as the light and creamy Kaiserschmarren. Rumour suggests that the thanks for this dish ought to go to a failed and shredded omelette. Whether or not that is true, the important thing is that the recipe has been passed down to us.</h4>
+          <img id="mainimage" src="images/kaiserschmarren2.jpg" width=500px>
+          <h4 id="info">Mouse over to see more info</h4>
+          <div id="recepticle"></div>
         </div>
-      </section>
 
-      <section id="grid2">
         <div id="col2">
-          <img src="images/kaiserschmarren2.jpg" width=500px>
-          <div id="imageRecepticle"></div>
-        </div>
-        <div id="col3">
-          <h3>Ingredients</h3>
-          <ul>
+          <h2 id="toggle">Ingredients</h2>
+          <ul id="textChange">
             <li>6 Eggs</li>
             <li>350–400 ml milk</li>
             <li>180–200 g finely ground flour</li>
@@ -51,7 +47,7 @@
       </section>
 
       <section id="grid2">
-        <div id="col4">
+        <div id="col3">
           <p>Place the raisins in a bowl, mix with the rum and leave to stand for approx. 15 minutes. Separate the eggs and place the yolks in a mixing bowl. Pour in the milk, flavour with some grated lemon rind and vanilla sugar, and add the flour. Mix to form a smooth dough.<br><br>
             Beat the egg whites with the crystal sugar and a small pinch of salt until it forms a firm peak, and fold into the dough mix. Pre-heat the oven to 180 °C.<br><br>
             Let the butter melt and bubble up in one large, or two small (coated) heatproof dishes. Pour in the mixture and after 1–2 minutes scatter the soaked raisins over the top. Cook the underside until light brown, turn over using a spatula and bake for 6–8 minutes in the pre-heated oven until golden brown.<br><br>
@@ -61,15 +57,13 @@
         </div>
       </section>
       <section id="grid3">
-        <div calss="col">Click to view images</div>
-        <div class="col">More interpretations</div>
-      </section>
-
-      <h2>Click to view images</h2>
-      <img id="image1" src="https://c1.staticflickr.com/8/7010/6487080111_5323cea69e_o.jpg" width="100">
-      <img id="image2" src="https://c5.staticflickr.com/3/2437/4007874876_0d26f28ec7_o.jpg" width="100">
+        <div id="col4">
+      <h3 id="toggle">Click to view images</h3>
+      <img id="image1" src="images/kaiserschmarren.jpg" height=200px>
+      <img id="image2" src="images/kaiserschmarren3.jpg" height=200px>
+      <img id="image3" src="images/kaiserschmarren4.jpg" height=200px>
       <div id="imageRecepticle"></div>
-
+    </section>
     </main>
 
     <footer>
@@ -78,22 +72,30 @@
       </section>
     </footer>
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--Remote version-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
       $(document).ready(function(){
       //All jquery code should be placed below, all jquery inside of document ready function
         $("body").css("background-color", "lightblue");
         $("h1").css("color", "white");
         $("h1").css("font-size", "40px");
-        $("#textChange").css("background-color", "pink");
-        $("#textChange").html("I love javascript");
+        $("h2").css("background-color", "white");
+        $("footer").css("font-size", "30px");
+        $("footer").css("text-align", "center");
+        $("header").css("text-align", "center");
+        $("#textChange").css("background-color", "orange");
 
         $("#textChange").click(function(){
-          $("body").css("background-color", "orange");
+          $("body").css("background-color", "white");
+          $("h1").css("color", "lightblue");
         }); //End of text change click
 
         $("#info").mouseenter(function(){
-          $("#recepticle").html("<em> This information is important </em>");
-          $("#info").css("background-color", "blue");
+          $("#recepticle").html("<em> The chopped pancakes known as Kaiserschmarren are not only a long-running favourite in Austria and Bavaria. While the Austro-Hungarian monarchy may have united any number of peoples under its emblem of the two eagles, when it came to his choice of meals Emperor Franz Joseph proved very loyal to his native country and region. Alongside cooked beef, he loved simple pastry dishes made from eggs, flour, milk and a little sugar, such as the light and creamy Kaiserschmarren. Rumour suggests that the thanks for this dish ought to go to a failed and shredded omelette. Whether or not that is true, the important thing is that the recipe has been passed down to us. </em>");
+          $("#info").css("background-color", "white");
         });
         $("#info").mouseleave(function(){
           $("#recepticle").html("");
@@ -101,24 +103,21 @@
         });
 
         $("#image1").click(function(){
-          $("#imageRecepticle").html('<img src="https://c1.staticflickr.com/8/7010/6487080111_5323cea69e_o.jpg" width="300">');
+          $("#imageRecepticle").html('<img src="images/kaiserschmarren.jpg" width=775px>');
         });
 
         $("#image2").click(function(){
-          $("#imageRecepticle").html('<img src="https://c5.staticflickr.com/3/2437/4007874876_0d26f28ec7_o.jpg" width="300">');
+          $("#imageRecepticle").html('<img src="images/kaiserschmarren3.jpg" width="775">');
         });
 
-        $("#hide").click(function(){
-          $(".box").hide();
-        });
-
-        $("#show").click(function(){
-          $(".box").show();
+        $("#image3").click(function(){
+          $("#imageRecepticle").html('<img src="images/kaiserschmarren4.jpg" width="775">');
         });
 
         $("#toggle").click(function(){
-          $(".box").toggle(1000);
+          $("#mainimage").toggle(1000);
         });// Add a number to add effect; the higher the number the longer it takes
+
 
 
       });// End of document ready
