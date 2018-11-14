@@ -1,0 +1,260 @@
+header{
+  width: 80%;
+  height: 225px;
+  background-color: lightblue;
+  margin: auto;
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  width: 80%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+}
+
+footer{
+  width: 80%;
+  height: 200px;
+  background-color: lightblue;
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#grid1{
+  display: grid;
+  grid-template-areas: "col1";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  margin-top: 10px;
+}
+
+#col1{
+  grid-area: col1;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+}
+
+#grid2{
+  display: grid;
+  grid-template-areas: "col2";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+  border-color: gray;
+  border-style: double;
+}
+
+#col2{
+  grid-area: col2;
+  height: auto;
+  text-align: center;
+  margin:auto;
+  background-color: white;
+}
+
+.page1{
+  display: grid;
+  height: auto;
+  grid-template-areas: "col3 col4";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-top: 10px;
+}
+
+#col3{
+  grid-area: col3;
+  height: auto;
+  text-align: center;
+  margin:auto;
+  background-color: white;
+}
+
+#col4{
+  grid-area: col4;
+  height: auto;
+  text-align: center;
+  margin:auto;
+  background-color: white;
+}
+
+.page2{
+  display: grid;
+  grid-template-areas: "col5 col6";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  margin-top: 25px;
+}
+
+#col5{
+  grid-area: col7;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  margin-top: 70px;
+}
+
+#col6{
+  grid-area: col8;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.page3{
+  display: grid;
+  grid-template-areas: "col7 col8";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  margin-top: 25px;
+}
+
+.page4{
+  display: grid;
+  grid-template-areas: "col7 col8";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  margin-top: 25px;
+}
+
+#col7{
+  grid-area: col7;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  margin-top: 70px;
+}
+
+#col8{
+  grid-area: col8;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+.page5{
+  display: grid;
+  grid-template-areas: "col9 col10";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  margin-top: 25px;
+}
+
+#col9{
+  grid-area: col9;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+#col10{
+  grid-area: col10;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+
+#footergrid{
+  display: grid;
+  grid-template-areas: "footer1 footer2 footer3";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+#footer1{
+  grid-area: footer1;
+  background-color: lightpink;
+  height: auto;
+  text-align: center;
+}
+
+
+
+#image1{
+  grid-area: col1;
+  text-align: center;
+  width: 100%;
+}
+
+
+.images{
+  width: 400px;
+  display: block;
+  margin: 10px auto;
+  margin-top: 10px;
+}
+
+.images2{
+  height: 300px;
+  display: block;
+  margin: 10px auto;
+  margin-top: 10px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+h3{
+  margin-top: 'Montserrat', sans-serif;
+}
+
+h4{
+  font-size: 40px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+  text-align: center;
+  margin: 5px;
+}

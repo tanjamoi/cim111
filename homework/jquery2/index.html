@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+
+  <head>
+    <title>Travel Guide - Tokyo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 599px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 599px)">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|Lobster+Two|Montserrat');
+    </style>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.titledpage-scroll.js"></script>
+    <script src="js/titledpage-scroll.css"></script>
+  </head>
+
+
+  <body>
+
+    <header>
+
+      <h1>Tokyo</h1>
+      <h3>- the city that is always on the move. Tokyo dazzles with its traditional culture and passion for everything new.</h3>
+    </header>
+
+
+    <main>
+
+      <section id="grid1">
+        <div id="col1">
+          <img id="image1" src="images/tokyo.jpg">
+        </div>
+      </section>
+
+      <section id="grid2">
+        <div id="col2">
+          <h2>Top 5 Sights in Tokyo</h2>
+        </div>
+      </section>
+
+    <div class="main">
+
+      <section class="page1">
+          <div id="col3">
+            <img class="images" src="images/senso-ji.jpg">
+          </div>
+          <div id="col4">
+            <h4>Senso-Ji</h4>
+            <p>Tokyo’s most visited temple enshrines a golden image of Kannon (the Buddhist goddess of mercy), which, according to legend, was miraculously pulled out of the nearby Sumida-gawa by two fishermen in AD 628. The image has remained on the spot ever since but is never on public display. The present structure dates from 1958. Entrance to the temple complex is via the fantastic, red Kaminari-mon (雷門; Thunder Gate) and busy shopping street Nakamise-dōri.</p>
+          </div>
+      </section>
+
+      <section class="page3">
+        <div id="col5">
+          <img class="images" src="images/shibuya-crossing.jpg">
+        </div>
+        <div id="col6">
+          <h4>Shibuya Crossing</h4>
+          <p>Rumoured to be the busiest intersection in the world (and definitely in Japan), Shibuya Crossing, is like a giant beating heart, sending people in all directions with every pulsing light change. Perhaps nowhere else says ‘Welcome to Tokyo’ better than this. Hundreds of people – and at peak times said to be over 1000 people – cross at a time, coming from all directions at once yet still managing to dodge each other with a practised, nonchalant agility.</p>
+        </div>
+      </section>
+
+      <section class="page4">
+        <div id="col7">
+          <img class="images" src="images/meiji-jingu.jpg">
+        </div>
+        <div id="col8">
+          <h4>Meiji-Jingu</h4>
+          <p>Tokyo’s grandest Shintō shrine is dedicated to the Emperor Meiji and Empress Shōken, whose reign (1868–1912) coincided with Japan's transformation from isolationist, feudal state to modern nation. Constructed in 1920, the shrine was destroyed in WWII air raids and rebuilt in 1958. The shrine is currently undergoing renovations bit by bit in preparation for its 100th anniversary, but will remain open.</p>
+        </div>
+      </section>
+
+      <section class="page5">
+        <div id="col9">
+          <img id="info" class="images2" src="images/rikugi-en.jpg">
+          <h4 id="info">Rikugi-en</h4>
+          <div id="recepticle"></div>
+        </div>
+        <div id="col10">
+          <img id="info2" class="images2" src="images/ghibli.jpg">
+          <h4 id="info2">Ghibli Museum</h4>
+          <div id="recepticle2"></div>
+        </div>
+      </section>
+
+    </div>
+
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+      $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+
+      $("#info").mouseenter(function(){
+        $("#recepticle").html("<em>Considered by many to be Tokyo's most elegant garden, Rikugi-en was originally completed in 1702. It was designed to evoke scenes from classical literature and mythology, but no context is necessary to appreciate the wooded walkways, stone bridges, central pond, trickling streams and wooden teahouses of this beautifully preserved garden. There is almost always something in bloom at Rikugi-en, though the garden is most famous for its maple leaves in late fall. Usually during late November and early December, the park stays open until 9pm. In spring, the highlight is the large weeping cherry tree near the entrance.</em>");
+        $("#info").css("background-color", "lightblue");
+      });
+      $("#info").mouseleave(function(){
+        $("#recepticle").html("");
+        $("#info").css("background-color", "transparent");
+      });
+
+      $("#info2").mouseenter(function(){
+        $("#recepticle2").html("<em>Master animator Miyazaki Hayao, whose Studio Ghibli produced Princess Mononoke and Spirited Away, designed this museum. Fans will enjoy the original sketches; kids, even if they’re not familiar with the movies, will fall in love with the fairy-tale atmosphere (and the big cat bus). Don’t miss the original 20-minute animated short playing on the 1st floor.</em>");
+        $("#info").css("background-color", "lightblue");
+      });
+      $("#info2").mouseleave(function(){
+        $("#recepticle2").html("");
+        $("#info").css("background-color", "transparent");
+      });
+    </script>
+
+  </body>
+
+
+</html>
