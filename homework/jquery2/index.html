@@ -2,126 +2,400 @@
 
 <html>
 
+<head>
 
-  <head>
-    <title>Travel Guide - Tokyo</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 599px)">
-    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 599px)">
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|Lobster+Two|Montserrat');
-    </style>
+	<meta charset="utf-8">
+	<title>Travel Guide</title>
+	<meta name="title" content="Travel Guide Tokyo" />
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.titledpage-scroll.js"></script>
-    <script src="js/titledpage-scroll.css"></script>
-  </head>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery.zoom-scroller.js"></script>
+
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #fff;
+      padding: 0;
+      text-align: center;
+      font-family: 'Open Sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizelegibility;
+    }
+
+    a {
+      color: black;
+    }
+
+    .header {
+      padding: 30px 0 0;
+      float: left;
+      width: 100%;
+      background: white;
+    }
+
+    .wrapper {
+    	height: auto !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
 
 
-  <body>
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #lightblue;
+      margin-bottom: 5px;
+      font-size: 70px;
+      font-weight: 100;
+    }
+    h2 {
+      padding: 00px 20px 30px 20px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      letter-spacing: 0px;
+      color: #888;
+      font-size: 20px;
+      line-height: 160%;
+      font-weight: 100;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
 
-    <header>
+    .pointer {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      right: -40px;
+    }
+    .pointer2 {
+      color: #00B0FF;
+      font-family: 'Pacifico';
+      font-size: 24px;
+      margin-top: 15px;
+      position: absolute;
+      top: 130px;
+      left: -40px;
+    }
+    pre {
+      margin: 80px auto;
+    }
+    pre code {
+      padding: 35px;
+      border-radius: 5px;
+      font-size: 15px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      max-width: 500px;
+    }
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
 
-      <h1>Tokyo</h1>
-      <h3>- the city that is always on the move. Tokyo dazzles with its traditional culture and passion for everything new.</h3>
-    </header>
+
+    .main h1 {
+      padding:20px 50px 10px;
+      float: left;
+      width: 100%;
+      font-size: 60px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      margin: 0;
+      padding-top: 25px;
+      font-family: 'Open Sans';
+      letter-spacing: -1px;
+      text-transform: capitalize;
+    }
+
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+
+    .reload, .btn{
+      display: inline-block;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: Open Sans;
+      font-weight: bold;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: #4D90FE;
+      background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+      background-image: linear-gradient(top,#4d90fe,#4787ed);
+      border: 1px solid #3079ED;
+      color: #FFF;
+    }
+    .reload:hover{
+      background: #317af2;
+    }
+    .btn {
+      width: 200px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: #4D90FE;
+      background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
+      background-image: linear-gradient(top,#4d90fe,#4787ed);
+      border: 1px solid #3079ED;
+      color: #FFF;
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #317af2;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: #888;
+      padding: 10px 10px;
+      margin: 0 0 0 0;
+      float: left;
+      width: 100%;
+    }
+    .credit a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background:#f5f5f5;
+      font-weight: bold;
+      font-size: 13px;
+      color: #888;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+    }
+    .back:hover {
+      background: #eee;
+    }
+
+    .container {
+      width: 980px;
+      margin: 0 auto;
+    }
+
+    .page-container {
+      float: left;
+      width: 100%;
+      margin: 0 auto 300px;
+      position: relative;
+    }
+
+    .header {
+      overflow: hidden;
+      clear: both;
+    }
+
+    .bg {
+      position: absolute;
+      min-height: 100% !important;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .ibg-bg {
+      position: absolute;
+    }
 
 
-    <main>
+    .main {
+      position: relative;
+    }
 
-      <section id="grid1">
-        <div id="col1">
-          <img id="image1" src="images/tokyo.jpg">
-        </div>
-      </section>
+    .zoom-images {
+      width: 25%;
+      height: 150px;
+      margin: 2%;
+      display: block;
+      position: relative;
+      float: left;
+      width: 26%;
+      height: 215px;
+    }
+    .zoom-images .info {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.35);
+      padding: 20px;
+      text-align: center;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    .zoom-images .info h1 {
+      font-weight: bold;
+      color: white;
+      font-size: 20px;
+      margin: 55px 0 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0;
 
-      <section id="grid2">
-        <div id="col2">
-          <h2>Top 5 Sights in Tokyo</h2>
-        </div>
-      </section>
+    }
+    .zoom-images .info h1 a {
+     color: #fff;
+    }
+    .zoom-images .info h2 {
+      margin-top: 0;
+      color: white;
+      font-size: 14px;
+      font-family: georgia;
+      font-style: italic;
+    }
+    .zoom-group {
+      position: relative;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    .zoom-group .zoom-images:first-child {
+      width: 66%;
+      height: 469px;
+    }
+    .zoom-group .zoom-images:first-child h1 {
+      margin-top: 190px;
+      font-size: 30px;
+    }
 
-    <div class="main">
+	</style>
 
-      <section class="page1">
-          <div id="col3">
-            <img class="images" src="images/senso-ji.jpg">
-          </div>
-          <div id="col4">
-            <h4>Senso-Ji</h4>
-            <p>Tokyo’s most visited temple enshrines a golden image of Kannon (the Buddhist goddess of mercy), which, according to legend, was miraculously pulled out of the nearby Sumida-gawa by two fishermen in AD 628. The image has remained on the spot ever since but is never on public display. The present structure dates from 1958. Entrance to the temple complex is via the fantastic, red Kaminari-mon (雷門; Thunder Gate) and busy shopping street Nakamise-dōri.</p>
-          </div>
-      </section>
+	<script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery.zoom-scroller.js"></script>
+	<script src="js/jquery.zoom-scroller.min.js"></script>
 
-      <section class="page3">
-        <div id="col5">
-          <img class="images" src="images/shibuya-crossing.jpg">
-        </div>
-        <div id="col6">
-          <h4>Shibuya Crossing</h4>
-          <p>Rumoured to be the busiest intersection in the world (and definitely in Japan), Shibuya Crossing, is like a giant beating heart, sending people in all directions with every pulsing light change. Perhaps nowhere else says ‘Welcome to Tokyo’ better than this. Hundreds of people – and at peak times said to be over 1000 people – cross at a time, coming from all directions at once yet still managing to dodge each other with a practised, nonchalant agility.</p>
-        </div>
-      </section>
 
-      <section class="page4">
-        <div id="col7">
-          <img class="images" src="images/meiji-jingu.jpg">
-        </div>
-        <div id="col8">
-          <h4>Meiji-Jingu</h4>
-          <p>Tokyo’s grandest Shintō shrine is dedicated to the Emperor Meiji and Empress Shōken, whose reign (1868–1912) coincided with Japan's transformation from isolationist, feudal state to modern nation. Constructed in 1920, the shrine was destroyed in WWII air raids and rebuilt in 1958. The shrine is currently undergoing renovations bit by bit in preparation for its 100th anniversary, but will remain open.</p>
-        </div>
-      </section>
+	<script>
+	  $(document).ready(function(){
+       $(".zoom-images").zoomScroller({
+         initZoom: 1.05,
+         animationTime: 1500,
+         onZoom: function(el, zoomType) {
+           if (zoomType == "in") {
+             el.find(".info").fadeIn("slow");
+           } else {
+             el.find(".info").fadeOut("slow");
+           }
+         }
+       });
+		});
 
-      <section class="page5">
-        <div id="col9">
-          <img id="info" class="images2" src="images/rikugi-en.jpg">
-          <h4 id="info">Rikugi-en</h4>
-          <div id="recepticle"></div>
-        </div>
-        <div id="col10">
-          <img id="info2" class="images2" src="images/ghibli.jpg">
-          <h4 id="info2">Ghibli Museum</h4>
-          <div id="recepticle2"></div>
-        </div>
-      </section>
+	</script>
+</head>
 
+
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    <div class="header">
+        <h1>Tokyo</h1>
+        <h2> - the city that is always on the move. Tokyo dazzles with its traditional culture and passion for everything new.</h2>
+  	  </div>
+
+    	<div class="container">
+  	    <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="images/shibuya-crossing.jpg">
+  	        <a href="https://theculturetrip.com/asia/japan/articles/tokyos-most-iconic-attraction-shibuya-crossing/" class="info" target="_blank"><h1>Shibuya Crossing</h1><h2>Rumoured to be the busiest intersection in the world (and definitely in Japan), Shibuya Crossing is like a giant beating heart, sending people in all directions with every pulsing light change. Perhaps nowhere else says ‘Welcome to Tokyo’ better than this.</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="images/tokyo.jpg">
+  	        <a href="https://www.japan-guide.com/e/e2164.html" class="info" target="_blank"><h1>Tokyo</h1><h2>Whatever you're looking for, you'll find it here.</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="images/rikugi-en.jpg">
+  	       <a href="https://www.lonelyplanet.com/japan/tokyo/attractions/rikugi-en/a/poi-sig/396907/356817" class="info" target="_blank"><h1>Rikugi-en</h1><h2>Here is almost always something in bloom. </h2></a>
+  	      </div>
+  	    </div>
+
+  	    <div class="zoom-group">
+  	      <div class="zoom-images">
+  	        <img src="images/senso-ji.jpg">
+  	        <a href="https://www.lonelyplanet.com/japan/tokyo/attractions/senso-ji/a/poi-sig/396343/356817" class="info" target="_blank"><h1>Senso-ji</h1><h2>Check out Tokyo’s most visited temple. The entrance to the temple complex is via the fantastic, red Kaminari-mon (雷門; Thunder Gate) and busy shopping street Nakamise-dōri.</h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="images/meiji-jingu.jpg">
+  	        <a href="https://www.lonelyplanet.com/japan/tokyo/attractions/meiji-jingu/a/poi-sig/396897/356817" class="info" target="_blank"><h1>Meiji-Jingu</h1><h2>Visit Tokyo’s grandest Shintō shrine! </h2></a>
+  	      </div>
+  	      <div class="zoom-images">
+  	        <img src="images/ghibli.jpg">
+  	       <a href="http://www.ghibli-museum.jp/en/" class="info" target="_blank"><h1>Ghibli Museum</h1><h2>Master animator Miyazaki Hayao, who produced Princess Mononoke and Spirited Away, invites you to his museum.</h2></a>
+  	      </div>
+  	    </div>
+
+
+  	    </div>
+      </div>
     </div>
+  </div>
 
-    </main>
-
-    <footer>
-    </footer>
-
-    <script>
-      $(".main").tiltedpage_scroll({
-    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
-    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
-    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
-    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
-    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
-  });
-
-      $("#info").mouseenter(function(){
-        $("#recepticle").html("<em>Considered by many to be Tokyo's most elegant garden, Rikugi-en was originally completed in 1702. It was designed to evoke scenes from classical literature and mythology, but no context is necessary to appreciate the wooded walkways, stone bridges, central pond, trickling streams and wooden teahouses of this beautifully preserved garden. There is almost always something in bloom at Rikugi-en, though the garden is most famous for its maple leaves in late fall. Usually during late November and early December, the park stays open until 9pm. In spring, the highlight is the large weeping cherry tree near the entrance.</em>");
-        $("#info").css("background-color", "lightblue");
-      });
-      $("#info").mouseleave(function(){
-        $("#recepticle").html("");
-        $("#info").css("background-color", "transparent");
-      });
-
-      $("#info2").mouseenter(function(){
-        $("#recepticle2").html("<em>Master animator Miyazaki Hayao, whose Studio Ghibli produced Princess Mononoke and Spirited Away, designed this museum. Fans will enjoy the original sketches; kids, even if they’re not familiar with the movies, will fall in love with the fairy-tale atmosphere (and the big cat bus). Don’t miss the original 20-minute animated short playing on the 1st floor.</em>");
-        $("#info").css("background-color", "lightblue");
-      });
-      $("#info2").mouseleave(function(){
-        $("#recepticle2").html("");
-        $("#info").css("background-color", "transparent");
-      });
-    </script>
-
-  </body>
-
-
+</body>
 </html>
