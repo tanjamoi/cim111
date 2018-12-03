@@ -16,37 +16,31 @@
   <script type="text/javascript" src="jquery.zoom-scroller.js"></script>
 
   <style>
+
     html {
       height: 100%;
     }
     body {
-      background: #fff;
-      padding: 0;
       text-align: center;
       font-family: 'Open Sans';
       position: relative;
       margin: 0;
       height: 100%;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizelegibility;
     }
 
     a {
       color: black;
     }
 
-    .header {
+		.header {
       padding: 30px 0 0;
       float: left;
       width: 100%;
-      background: white;
     }
 
     .wrapper {
     	height: auto !important;
     	height: 100%;
-    	margin: 0 auto;
-    	overflow: hidden;
     }
 
     a {
@@ -58,22 +52,23 @@
       width: 100%;
       float: left;
     }
+
     h1 {
       margin-top: 100px;
-      color: #lightblue;
       margin-bottom: 5px;
       font-size: 70px;
       font-weight: 100;
     }
+
     h2 {
       padding: 00px 20px 30px 20px;
-      box-sizing: border-box;
+			box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      letter-spacing: 0px;
+			letter-spacing: 0px;
       color: #888;
       font-size: 20px;
-      line-height: 160%;
+			line-height: 160%;
       font-weight: 100;
       margin-top: 10px;
       margin-bottom: 0;
@@ -97,174 +92,16 @@
       top: 130px;
       left: -40px;
     }
-    pre {
-      margin: 80px auto;
-    }
-    pre code {
-      padding: 35px;
-      border-radius: 5px;
-      font-size: 15px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      max-width: 500px;
-    }
+
     .main {
       float: left;
       width: 100%;
       margin: 0 auto;
-    }
-
-
-    .main h1 {
-      padding:20px 50px 10px;
-      float: left;
-      width: 100%;
-      font-size: 60px;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      font-weight: 100;
-      margin: 0;
-      padding-top: 25px;
-      font-family: 'Open Sans';
-      letter-spacing: -1px;
-      text-transform: capitalize;
-    }
-
-    .main h1.demo1 {
-      background: #1ABC9C;
-    }
-
-    .reload.bell {
-      font-size: 12px;
-      padding: 20px;
-      width: 45px;
-      text-align: center;
-      height: 47px;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-    }
-
-    .reload.bell #notification {
-      font-size: 25px;
-      line-height: 140%;
-    }
-
-    .reload, .btn{
-      display: inline-block;
-      border-radius: 3px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-      display: inline-block;
-      line-height: 100%;
-      padding: 0.7em;
-      text-decoration: none;
-      width: 100px;
-      line-height: 140%;
-      font-size: 17px;
-      font-family: Open Sans;
-      font-weight: bold;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      background-color: #4D90FE;
-      background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
-      background-image: linear-gradient(top,#4d90fe,#4787ed);
-      border: 1px solid #3079ED;
-      color: #FFF;
-    }
-    .reload:hover{
-      background: #317af2;
-    }
-    .btn {
-      width: 200px;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      background-color: #4D90FE;
-      background-image: -webkit-linear-gradient(top,#4D90FE,#4787ED);
-      background-image: linear-gradient(top,#4d90fe,#4787ed);
-      border: 1px solid #3079ED;
-      color: #FFF;
-    }
-    .clear {
-      width: auto;
-    }
-    .btn:hover, .btn:hover {
-      background: #317af2;
-    }
-    .btns {
-      width: 410px;
-      margin: 50px auto;
-    }
-    .credit {
-      text-align: center;
-      color: #888;
-      padding: 10px 10px;
-      margin: 0 0 0 0;
-      float: left;
-      width: 100%;
-    }
-    .credit a {
-      text-decoration: none;
-      font-weight: bold;
-      color: black;
-    }
-
-    .back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      display: block;
-      padding: 7px;
-      width: 100%;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      background:#f5f5f5;
-      font-weight: bold;
-      font-size: 13px;
-      color: #888;
-      -webkit-transition: all 200ms ease-out;
-      -moz-transition: all 200ms ease-out;
-      -o-transition: all 200ms ease-out;
-      transition: all 200ms ease-out;
-    }
-    .back:hover {
-      background: #eee;
     }
 
     .container {
       width: 980px;
       margin: 0 auto;
-    }
-
-    .page-container {
-      float: left;
-      width: 100%;
-      margin: 0 auto 300px;
-      position: relative;
-    }
-
-    .header {
-      overflow: hidden;
-      clear: both;
-    }
-
-    .bg {
-      position: absolute;
-      min-height: 100% !important;
-      width: 100%;
-      z-index: 0;
-    }
-
-    .ibg-bg {
-      position: absolute;
-    }
-
-
-    .main {
-      position: relative;
     }
 
     .zoom-images {
@@ -280,15 +117,13 @@
     .zoom-images .info {
       display: none;
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.35);
+			background: rgba(0,0,0,0.35);
       padding: 20px;
       text-align: center;
       display: block;
-      box-sizing: border-box;
+			box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
     }
@@ -302,25 +137,20 @@
       padding: 0;
 
     }
-    .zoom-images .info h1 a {
-     color: #fff;
-    }
-    .zoom-images .info h2 {
+
+		.zoom-images .info h2 {
       margin-top: 0;
       color: white;
       font-size: 14px;
       font-family: georgia;
       font-style: italic;
     }
-    .zoom-group {
-      position: relative;
-      width: 100%;
-      margin-bottom: 5px;
-    }
-    .zoom-group .zoom-images:first-child {
+
+		.zoom-group .zoom-images:first-child {
       width: 66%;
       height: 469px;
     }
+
     .zoom-group .zoom-images:first-child h1 {
       margin-top: 190px;
       font-size: 30px;
@@ -328,27 +158,6 @@
 
 	</style>
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="jquery.zoom-scroller.js"></script>
-	<script src="js/jquery.zoom-scroller.min.js"></script>
-
-
-	<script>
-	  $(document).ready(function(){
-       $(".zoom-images").zoomScroller({
-         initZoom: 1.05,
-         animationTime: 1500,
-         onZoom: function(el, zoomType) {
-           if (zoomType == "in") {
-             el.find(".info").fadeIn("slow");
-           } else {
-             el.find(".info").fadeOut("slow");
-           }
-         }
-       });
-		});
-
-	</script>
 </head>
 
 
@@ -396,6 +205,28 @@
       </div>
     </div>
   </div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery.zoom-scroller.js"></script>
+	<script src="js/jquery.zoom-scroller.min.js"></script>
+
+
+	<script>
+	  $(document).ready(function(){
+       $(".zoom-images").zoomScroller({
+         initZoom: 1.05,
+         animationTime: 1500,
+         onZoom: function(el, zoomType) {
+           if (zoomType == "in") {
+             el.find(".info").fadeIn("slow");
+           } else {
+             el.find(".info").fadeOut("slow");
+           }
+         }
+       });
+		});
+
+	</script>
 
 </body>
 </html>
